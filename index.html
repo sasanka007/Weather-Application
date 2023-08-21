@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+<script src="https://kit.fontawesome.com/a33530bb41.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Document</title>
+</head>
+
+<body onload="fetchWeatherData()">
+
+  <div class="weather-app">
+    <div class="container">
+      <h1 class="brand"> Weather Application</h1>
+      <div>
+        <h1 class="temp">16&#176;</h1>
+        <div class="city-time">
+          <h1 class="name">New Delhi</h1>
+          <small>
+            <span class="time">06:09</span>
+              
+            <span class="date">
+              Monday  Sep 19
+            </span>
+          </small>
+        </div>
+        <div class="weather">
+          <img src="icons\day\113.png" class="icon" alt="icon" width="70" height="70" />
+          <span class="condition">Rainy</span>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <form id="locationInput">
+       <input 
+        type="text" 
+        class="search" 
+        placeholder="Search Location..."
+       />
+       <button type="submit" class="submit">
+        <i class="fa-brands fa-searchengin fa-2xl"></i>
+       </button>
+      </form>
+      <ul class="details">
+        <h5 style="text-transform: uppercase;">
+          <li>
+            <span >Last Updated</span>
+            <span class="lastUpdated">2023-07-30 20:11</span>
+          </li>
+        </h5>
+
+        <h4 style="text-transform: uppercase;">Location Details</h4>
+        <li>
+          <span>Region</span>
+          <span class="region"></span>
+        </li>
+        <li>
+          <span>Country</span>
+          <span class="country"></span>
+        </li>
+        <li>
+          <span>Time Zone</span>
+          <span class="timezone"></span>
+        </li>
+
+
+        <h4 style="text-transform: uppercase;">Weather Details</h4>
+        <li>
+          <span>Cloudy</span>
+          <span class="cloud">89%</span>
+        </li>
+        <li>
+          <span>Humidity</span>
+          <span class="humidity">64%</span>
+        </li>
+        <li>
+          <span>Wind</span>
+          <span class="wind">8km/h</span>
+        </li>
+        <li>
+          <span>Feels Like</span>
+          <span class="feels-like">45&#176;</span>
+        </li>
+        <li>
+          <span>Wind Direction</span>
+          <span class="wind-direction">W</span>
+        </li>
+        <li>
+          <span>Wind Degree</span>
+          <span class="wind_degree">W</span>
+        </li>
+        <li>
+          <span>Visibility</span>
+          <span class="visibility">8km/h</span>
+        </li>
+        <li>
+          <span>UV</span>
+          <span class="uv"></span>
+        </li>
+        <li>
+          <span>Pressure</span>
+          <span class="pressure">32inHg</span>
+        </li>
+        <li>
+          <span>Wind Gust</span>
+          <span class="windgust">8km/h</span>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
